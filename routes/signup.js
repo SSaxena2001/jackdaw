@@ -7,10 +7,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', function (req, res) {
-    let firstname = req.body.fname;
-    let lastname = req.body.lname;
-    let email = req.body.email;
-    console.log(firstname, lastname, email);
+    console.log(req.body);
 });
 
 module.exports = router;
