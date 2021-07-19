@@ -1,0 +1,110 @@
+html{
+  height: 100%;
+}
+
+body {
+  /* background-color: #141E61; */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  /* font-family: 'Merriweather', serif; */
+}
+/* body::-webkit-scrollbar{
+  display: none;                          Hiding Scrollbar
+} */
+
+h1 {
+  color: #fff;
+  margin-top: 200px auto 0 auto;
+  padding-top: 10%;
+  font-family: 'Merriweather', cursive;
+  font-size: 5.625rem;
+}
+/* hr{
+
+} */
+/* #nav{
+
+} */
+
+/* #nav.hover{
+  background-color: #ddd;
+  color: black;
+} */
+
+
+/* #navbar:hover{
+  background-color: #ddd;
+  color: black;
+
+}
+#navbar.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+#introduction {
+  margin-top: 2.9%;
+  /* padding-bottom: 3.5%; */
+}
+
+.Intro {
+  color: #fff;
+  text-align: left;
+  /* width: 50%; */
+}
+
+#intro-text {
+  padding-left: 5%;
+  margin-left: 10%
+}
+
+/* #waifu-pic {
+  padding: 7.5% 2.5%;
+} */
+
+
+.Waifu{
+width: 56.25rem;
+height: 37.25rem;
+}
+.waifu-list{
+  padding: 2.5% 5%;
+}
+.preferences{
+  background-color: #141E61;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.footer-div{
+  background-color: #787A91;
+
+
+}
+
+.footer{
+  width: 100%;
+  /* transform: translateY(17px); */
+  /* padding: 0; */
+}
+.copyright{
+    background-color: #787A91;
+    margin-bottom: 0;
+
+    /* padding-bottom: 0;
+    border-bottom: 0; */
+}
