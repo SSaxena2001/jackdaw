@@ -1,10 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const morgan = require("morgan");
 const mongoose = require("mongoose");
-const User = require("./models/User");
+const cookieParser = require('cookie-parser');
 //Routes follows here
 const signup = require("./routes/signup");
+const home = require("./routes/home");
 
 //App Initialization
 const app = express();
@@ -13,11 +13,10 @@ app.set("view engine", "ejs");
 //Adding middlewares here
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(morgan());
-
+app.use(cookieParser()); // Storing cookies for use of login
 //mongodb connect and uri will be here
 mongoose
-  .connect("mongodb://localhost/chatdaw", {
+  .connect("mongodb://localhost:27017/chatdaw", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -27,6 +26,7 @@ mongoose
 
 //Using routes here
 app.use("/", signup);
+app.use('/home', home);
 
 //Port is here
 const port = process.env.PORT || 3000;
